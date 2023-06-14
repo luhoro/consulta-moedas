@@ -22,7 +22,7 @@ const graficoParaDolar = new Chart(graficoDolar, {
     labels: [],
     datasets: [
       {
-        label: 'Dólar',
+        label: 'Dolar',
         data: [],
         borderWidth: 1,
       },
@@ -40,3 +40,29 @@ workerDolar.addEventListener('message', event => {
   adicionarDados(graficoParaDolar, tempo, valor)
 })
 
+
+// GRAFICO YUAN
+const graficoYuan = document.getElementById('graficoYuan')
+const graficoParaYuan = new Chart(graficoYuan, {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [
+      {
+        label: 'Yuan',
+        data: [],
+        borderWidth: 1,
+      },
+    ],
+  },
+})
+
+let workerYuan = new Worker('./scripts/workers/workerYuan.js')
+workerYuan.postMessage('cny')
+
+workerDolar.addEventListener('message', event => {
+  let tempo = geraHorario()
+  let valor = event.data.ask
+  exibeCotacao('yuan', 'yuans', valor)
+  adicionarDados(graficoParaYuan, tempo, valor)
+})
