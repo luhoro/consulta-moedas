@@ -66,3 +66,30 @@ workerDolar.addEventListener('message', event => {
   exibeCotacao('yuan', 'yuans', valor)
   adicionarDados(graficoParaYuan, tempo, valor)
 })
+
+
+// GRAFICO POUND
+const graficoPound = document.getElementById('graficoPound')
+const graficoParaPound = new Chart(graficoPound, {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [
+      {
+        label: 'Pound',
+        data: [],
+        borderWidth: 1,
+      },
+    ],
+  },
+})
+
+let workerPound = new Worker('./scripts/workers/workerPound.js')
+workerPound.postMessage('gbp')
+
+workerPound.addEventListener('message', event => {
+  let tempo = geraHorario()
+  let valor = event.data.ask
+  exibeCotacao('pound', 'pounds', valor)
+  adicionarDados(graficoParaPound, tempo, valor)
+})
