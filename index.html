@@ -25,13 +25,13 @@
         <section class="dadosDolar dadosMoedas">
           <div class="grafico">
             <h2>Variação da moeda desde o login</h2>
-            <img src="" alt="icone da moeda">
+            <img src="./icones/dolar.png" alt="icone da moeda">
             <canvas id="graficoDolar"></canvas>
           </div>
 
           <div class="valoresMoeda">
             <h2>Valores da moeda</h2>
-            <ul class="ValoresMoeda__lista" id="dólar" data-lista>
+            <ul class="valoresMoeda__lista" id="dolar" data-lista>
 
             </ul>
           </div>
@@ -40,13 +40,28 @@
         <section class="dadosYuan dadosMoedas">
           <div class="grafico">
             <h2>Variação da moeda desde o login</h2>
-            <img src="" alt="">
+            <img src="./icones/yuan.png" alt="icone da moeda">
             <canvas id="graficoYuan"></canvas>
           </div>
 
           <div class="valoresMoeda">
             <h2>Valores da moeda</h2>
-            <ul class="ValoresMoeda__lista" id="yuan" data-lista>
+            <ul class="valoresMoeda__lista" id="yuan" data-lista>
+
+            </ul>
+          </div>
+        </section>
+
+        <section class="dadosPound dadosMoedas">
+          <div class="grafico">
+            <h2>Variação da moeda desde o login</h2>
+            <img src="./icones/pound.png" alt="icone da moeda">
+            <canvas id="graficoPound"></canvas>
+          </div>
+
+          <div class="valoresMoeda">
+            <h2>Valores da moeda</h2>
+            <ul class="valoresMoeda__lista" id="pound" data-lista>
 
             </ul>
           </div>
@@ -55,8 +70,9 @@
       </div>
     </main>
 
-
-    <script type="module" src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="scripts/graficos.js"></script>
+    <script type="module" src="scripts/inflacao.js"></script>
   </body>
 
 </html>
