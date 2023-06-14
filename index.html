@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Câmbio</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <img width="80" height="80" src="https://img.icons8.com/cotton/100/money--v1.png" alt="money--v1" />
+
+      <div>
+        <h1 class="titulo">Consulta câmbio</h1>
+        <p class="subtitulo">Veja em tempo real as principais moedas do mercado mundial</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+
+        <section class="dadosDolar dadosMoedas">
+          <div class="grafico">
+            <h2>Variação da moeda desde o login</h2>
+            <img src="" alt="icone da moeda">
+            <canvas id="graficoDolar"></canvas>
+          </div>
+
+          <div class="valoresMoeda">
+            <h2>Valores da moeda</h2>
+            <ul class="ValoresMoeda__lista" id="dólar" data-lista>
+
+            </ul>
+          </div>
+        </section>
+
+        <section class="dadosYuan dadosMoedas">
+          <div class="grafico">
+            <h2>Variação da moeda desde o login</h2>
+            <img src="" alt="">
+            <canvas id="graficoYuan"></canvas>
+          </div>
+
+          <div class="valoresMoeda">
+            <h2>Valores da moeda</h2>
+            <ul class="ValoresMoeda__lista" id="yuan" data-lista>
+
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+
+</html>

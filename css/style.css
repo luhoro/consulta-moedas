@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans", sans-serif;
+}
+
+.main {
+  background-color: rgba(240, 240, 240, 0.3137254902);
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+  box-shadow: 1px 1px 30px #bbbbbb;
+}
+.header .titulo {
+  letter-spacing: 0.3rem;
+}
+.header .subtitulo {
+  letter-spacing: 0.1rem;
+  font-style: oblique;
+}
+
+.dadosMoedas {
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: inset 1px 1px 20px #e0e0e0;
+  border-radius: 4rem;
+  width: 100%;
+  padding: 40px 50px;
+}
+.dadosMoedas .grafico {
+  width: 60%;
+  position: relative;
+}
+.dadosMoedas .grafico img {
+  position: absolute;
+  background-color: #bbbbbb;
+  width: 30px;
+  height: 30px;
+  top: 0;
+}
+.dadosMoedas .grafico canvas {
+  width: 100%;
+  border-radius: 12px;
+}
+.dadosMoedas h2 {
+  margin: 0 0 15px 50px;
+}
+.dadosMoedas .valoresMoeda {
+  width: 40%;
+}/*# sourceMappingURL=style.css.map */
