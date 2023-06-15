@@ -60,7 +60,7 @@ const graficoParaYuan = new Chart(graficoYuan, {
 let workerYuan = new Worker('./scripts/workers/workerYuan.js')
 workerYuan.postMessage('cny')
 
-workerDolar.addEventListener('message', event => {
+workerYuan.addEventListener('message', event => {
   let tempo = geraHorario()
   let valor = event.data.ask
   exibeCotacao('yuan', 'yuans', valor)
