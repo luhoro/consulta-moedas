@@ -12,7 +12,7 @@ body {
 .main {
   background-color: rgba(240, 240, 240, 0.3137254902);
   min-height: 100vh;
-  padding: 50px 0;
+  padding: 5rem 0;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 6rem;
 }
 
 .header {
@@ -29,65 +29,64 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 40px 15px;
+  padding: 3rem 1rem;
   box-shadow: 1px 1px 30px #bbbbbb;
 }
 .header .titulo {
   letter-spacing: 0.3rem;
+  font-size: 2.3rem;
 }
 .header .subtitulo {
   letter-spacing: 0.1rem;
   font-style: oblique;
+  font-size: 1rem;
 }
 
 .dadosMoedas {
   display: flex;
   background-color: #ffffff;
-  box-shadow: inset 1px 1px 20px #e0e0e0;
+  box-shadow: inset 1px 1px 1.5rem #e0e0e0;
   border-radius: 4rem;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 2.3rem;
 }
 .dadosMoedas .grafico {
   width: 60%;
   height: 100%;
-  position: relative;
 }
 .dadosMoedas .grafico img {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: -6px;
+  width: 3rem;
 }
 .dadosMoedas .grafico canvas {
   width: 100%;
-  border-radius: 12px;
 }
-.dadosMoedas .grafico h2 {
-  margin: 0 0 15px 50px;
+.dadosMoedas .grafico__titulo {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  height: 50px;
 }
 .dadosMoedas .valoresMoeda {
   width: 40%;
 }
-.dadosMoedas .valoresMoeda h2 {
-  margin-bottom: 15px;
-  text-align: center;
+.dadosMoedas .valoresMoeda .grafico__titulo {
+  justify-content: center;
 }
 .dadosMoedas .valoresMoeda__lista {
   height: 80%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 960px) {
   .dadosMoedas {
     flex-direction: column;
-    gap: 30px;
-    padding: 40px 20px;
+    gap: 1.8rem;
   }
   .dadosMoedas h2 {
     text-align: center;

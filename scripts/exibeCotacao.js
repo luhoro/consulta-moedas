@@ -18,7 +18,7 @@ function imprimeCotacao(lista, nome, nomePlural, valor) {
 
     function criaCotacao(moeda) {
       const listaItem = document.createElement('li')
-      listaItem.innerHTML = `${valorFixo} ${moeda}: R$${(valor * valorFixo).toFixed(2)}`
+      listaItem.innerHTML = `${valorFixo} ${moeda}: R$${(valor * valorFixo).toFixed(2)} reais`
       lista.appendChild(listaItem)
     }
   })
